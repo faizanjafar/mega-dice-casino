@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 const MainSection = () => {
   const [tab, setTab] = useState(0);
-  console.log(tab, "tab");
+  const [tabs, setTabs] = useState("sol");
+  const [copy, setCopy] = useState(false);
+
   return (
     <>
       <section className="relative py-16 px-9">
@@ -172,9 +174,12 @@ const MainSection = () => {
               </div>
               <div class="mt-8 grid lg:grid-cols-12 gap-x-2 gap-y-2 my-2">
                 <button
-                  class="col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest transparent"
+                  class={`col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest ${
+                    tabs === "sol" && "bg-primary"
+                  }`}
                   type="button"
                   data-ninja-font="ubuntu_medium_normal"
+                  onClick={() => setTabs("sol")}
                 >
                   <img
                     alt="Solana"
@@ -190,9 +195,12 @@ const MainSection = () => {
                   Sol
                 </button>
                 <button
-                  class="col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest transparent"
+                  class={`col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest transparent ${
+                    tabs === "eth" && "bg-primary"
+                  }`}
                   type="button"
                   data-ninja-font="ubuntu_medium_normal"
+                  onClick={() => setTabs("eth")}
                 >
                   <img
                     alt="Ethereum"
@@ -208,9 +216,12 @@ const MainSection = () => {
                   Eth
                 </button>
                 <button
-                  class="col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest bg-primary"
+                  class={`col-span-4 flex py-2 items-center justify-center gap-x-1 border border-primary text-sm font-medium uppercase tracking-widest ${
+                    tabs === "bnb" && "bg-primary"
+                  }`}
                   type="button"
                   data-ninja-font="ubuntu_medium_normal"
+                  onClick={() => setTabs("bnb")}
                 >
                   <img
                     alt="BNB Smart Chain"
@@ -226,46 +237,81 @@ const MainSection = () => {
                   BNB
                 </button>
               </div>
-              <div class="grid grid-cols-12 mt-4 gap-x-2">
-                <button
-                  class={`col-span-6 flex py-2 items-center justify-center gap-x-1 border text-sm font-medium uppercase tracking-widest border-primary ${
-                    tab === 0 && "bg-primary"
-                  }`}
-                  onClick={() => setTab(0)}
-                >
-                  <img
-                    alt="Native token"
-                    loading="lazy"
-                    width="20"
-                    height="20"
-                    decoding="async"
-                    data-nimg="1"
-                    class="mr-2"
-                    src="/images/bnb2.png"
-                    className="text-transparent"
-                  />
-                  BNB
-                </button>
-                <button
-                  class={`col-span-6 flex py-2 items-center justify-center gap-x-1 border text-sm font-medium border-primary uppercase tracking-widest ${
-                    tab === 1 && "bg-primary"
-                  }`}
-                  onClick={() => setTab(1)}
-                >
-                  <img
-                    alt="USDT"
-                    loading="lazy"
-                    width="20"
-                    height="19"
-                    decoding="async"
-                    data-nimg="1"
-                    class="mr-2"
-                    src="/images/usdt.svg"
-                    className="text-transparent"
-                  />
-                  USDT
-                </button>
-              </div>
+
+              {tabs === "sol" && (
+                <>
+                  <div class="w-full py-3 text-center cursor-pointer">
+                    <h4 class="mb-2 text-base">
+                      Only send SOL from hot wallets (eg Phantom) to this
+                      address:
+                    </h4>
+                    <div
+                      class={`w-full p-2 font-bold text-center truncate border-2 border-primary ${
+                        copy && "bg-primary"
+                      }`}
+                      onClick={() => {
+                        setCopy(true);
+                        setTimeout(() => {
+                          setCopy(false);
+                        }, 1000);
+                      }}
+                    >
+                      {copy
+                        ? "COPY TO CLIPBOARD"
+                        : "BQtF7wp29e9KDu7MHqvcdMjtUpZXABtqkRsbgnDpygi1"}
+                    </div>
+                  </div>
+                  <div class="w-full py-1 my-0 text-center border-primary border-bottom">
+                    OR
+                  </div>
+                </>
+              )}
+              {tabs != "sol" ? (
+                <div class="grid grid-cols-12 mt-4 gap-x-2">
+                  <button
+                    class={`col-span-6 flex py-2 items-center justify-center gap-x-1 border text-sm font-medium uppercase tracking-widest border-primary ${
+                      tab === 0 && "bg-primary"
+                    }`}
+                    onClick={() => setTab(0)}
+                  >
+                    <img
+                      alt="Native token"
+                      loading="lazy"
+                      width="20"
+                      height="20"
+                      decoding="async"
+                      data-nimg="1"
+                      class="mr-2"
+                      src={
+                        tabs === "eth" ? "/images/eth.svg" : "/images/bnb.svg"
+                      }
+                      className="text-transparent"
+                    />
+                    {tabs}
+                  </button>
+                  <button
+                    class={`col-span-6 flex py-2 items-center justify-center gap-x-1 border text-sm font-medium border-primary uppercase tracking-widest ${
+                      tab === 1 && "bg-primary"
+                    }`}
+                    onClick={() => setTab(1)}
+                  >
+                    <img
+                      alt="USDT"
+                      loading="lazy"
+                      width="20"
+                      height="19"
+                      decoding="async"
+                      data-nimg="1"
+                      class="mr-2"
+                      src="/images/usdt.svg"
+                      className="text-transparent"
+                    />
+                    USDT
+                  </button>
+                </div>
+              ) : (
+                <></>
+              )}
               <div class="grid grid-cols-12 mt-6 gap-x-2 gap-y-0">
                 <div class="col-span-6">
                   {tab === 1 ? (
