@@ -70,7 +70,7 @@ const MainSection = () => {
             </div>
           </div>
           <div className="flex flex-col items-center col-span-12 xl:col-span-6">
-            <div className="flex flex-col w-full border-[5px] border-primary px-4 md:px-14 py-5 bg-darkgray">
+            <div className="flex flex-col w-full border-[5px] border-primary px-4 md:px-14 py-5 bg-[#0e212f]">
               <h2
                 class="py-2 mx-auto text-xl font-extrabold tracking-widest"
                 data-ninja-font="ubuntu_medium_normal"

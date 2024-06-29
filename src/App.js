@@ -179,7 +179,7 @@ function App() {
             <span className="strick">Our</span> features
           </h2>
           <div className="grid grid-cols-12 lg:gap-x-10 gap-y-8 mt-10">
-            <div class="flex flex-col col-span-12 row-span-2 p-10 border lg:col-span-4 bg-darkgray border-primary rounded-2xl gap-y-4">
+            <div class="flex flex-col col-span-12 row-span-2 p-10 border lg:col-span-4 bg-[#0e212f] border-primary rounded-2xl gap-y-4">
               <div class="flex items-center">
                 <img
                   alt="logo"
@@ -211,39 +211,39 @@ function App() {
                 Buy now
               </a>
             </div>
-            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-darkgray border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
-              <h4 class="font-bold uppercase text-primary typography_featureCardHeader__nuzkN __className_4253e1 lg:w-4/5">
+            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-[#0e212f] border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
+              <h4 class="font-bold uppercase text-primary lg:w-4/5">
                 Limited Edition NFTs
               </h4>
-              <p class="text-xs md:text-base __className_4253e1 undefined">
+              <p class="text-xs md:text-base">
                 Select holders of $DICE and Mega Dice players will receive
                 limited edition NFTs that will give access to special privileges
                 and rewards, or can be traded on the market. The choice is yours
               </p>
             </div>
-            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-darkgray border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
-              <h4 class="font-bold uppercase text-primary typography_featureCardHeader__nuzkN __className_4253e1 lg:w-4/5">
+            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-[#0e212f] border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
+              <h4 class="font-bold uppercase text-primary lg:w-4/5">
                 GAMING ECOSYSTEM
               </h4>
-              <p class="text-xs md:text-base __className_4253e1 undefined">
+              <p class="text-xs md:text-base">
                 $DICE is seamlessly integrated to Mega Dice casino, offering
                 exclusive access, rewards, and benefits
               </p>
             </div>
-            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-darkgray border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
-              <h4 class="font-bold uppercase text-primary typography_featureCardHeader__nuzkN __className_4253e1 lg:w-4/5">
+            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-[#0e212f] border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
+              <h4 class="font-bold uppercase text-primary lg:w-4/5">
                 EARLY BIRD BONUSES
               </h4>
-              <p class="text-xs md:text-base __className_4253e1 undefined">
+              <p class="text-xs md:text-base">
                 Early participants in the pre-sale receive bonus $DICE tokens,
                 increasing their initial investment value
               </p>
             </div>
-            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-darkgray border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
-              <h4 class="font-bold uppercase text-primary typography_featureCardHeader__nuzkN __className_4253e1 lg:w-4/5">
+            <div class="col-span-12 lg:col-span-4 p-5 lg:px-9 lg:py-12 bg-[#0e212f] border border-primary rounded-2xl text-center flex flex-col items-center gap-y-4">
+              <h4 class="font-bold uppercase text-primary lg:w-4/5">
                 REFERRAL PROGRAM
               </h4>
-              <p class="text-xs md:text-base __className_4253e1 undefined">
+              <p class="text-xs md:text-base">
                 $DICE holders can enjoy a generous 25% rev-share through the
                 Mega Dice Referral Program
               </p>
@@ -294,7 +294,7 @@ function App() {
                 <p class="text-xs font-medium leading-loose lg:leading-relaxed lg:text-base text-primary mb-2">
                   STEP 1
                 </p>
-                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl">
+                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl text-3xl">
                   Connect <span class="strick">your</span> wallet
                 </h2>
                 <p class="text-xs font-normal leading-loose lg:leading-relaxed lg:text-base text-gray-400">
@@ -306,10 +306,10 @@ function App() {
                 <p class="text-xs font-medium leading-loose lg:leading-relaxed lg:text-base text-primary mb-2">
                   STEP 2
                 </p>
-                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl">
+                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl text-3xl">
                   <span class="strick">Enter</span> Presale
                 </h2>
-                <p class="text-xs font-normal leading-loose lg:leading-relaxed lg:text-base text-lightgray __className_cbf3c0">
+                <p class="text-xs font-normal leading-loose lg:leading-relaxed lg:text-base text-gray-400">
                   Determine how much $DICE you want to buy. You can purchase
                   with USDT along with ETH, BNB and SOL
                 </p>
@@ -318,10 +318,10 @@ function App() {
                 <p class="text-xs font-medium leading-loose lg:leading-relaxed lg:text-base text-primary mb-2">
                   STEP 3
                 </p>
-                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl">
+                <h2 class="font-bold text-white !leading-normal uppercase tracking-tighter mb-2 lg:text-5xl text-3xl">
                   <span class="strick">Claim</span> $DICE
                 </h2>
-                <p class="text-xs font-normal leading-loose lg:leading-relaxed lg:text-base text-lightgray __className_cbf3c0">
+                <p class="text-xs font-normal leading-loose lg:leading-relaxed lg:text-base text-gray-400">
                   Congratulations! You can claim your $DICE after the presale
                   ends
                 </p>
@@ -348,7 +348,7 @@ function App() {
               />
             </div>
             <div className="col-span-12 lg:col-span-6">
-              <div className="flex flex-col p-5 bg-darkgray border border-[#707070] rounded-2xl">
+              <div className="flex flex-col p-5 bg-[#0e212f] border border-[#707070] rounded-2xl">
                 <h4 className="text-xl lg:text-2xl lg:leading-9 font-bold">
                   $DICE has total supply of
                   <br className="hidden lg:block" /> 420,000,000

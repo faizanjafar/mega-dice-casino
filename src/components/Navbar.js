@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="flex justify-between items-center w-full lg:px-0 px-8">
+      <header className="flex justify-between items-center w-full lg:px-0 px-8 md:h-0 h-24">
         <a href="/">
           <img src="/images/logo.svg" className="logo" alt="" />
         </a>

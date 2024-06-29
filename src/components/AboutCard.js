@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutCard = ({ img, price1, price2, des1, des2 }) => {
   return (
-    <div class="flex items-center justify-between w-full col-span-12 row-span-1 p-5 mb-6 border bg-darkgray xl:p-9 rounded-2xl border-primary md:col-span-6 md:row-span-2">
+    <div class="flex items-center justify-between w-full col-span-12 row-span-1 p-5 mb-6 border bg-[#0e212f] xl:p-9 rounded-2xl border-primary md:col-span-6 md:row-span-2">
       <img
         alt="Playing cards"
         loading="lazy"
