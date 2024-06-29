@@ -4,13 +4,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="flex justify-between items-center w-full lg:px-0 px-8 h-24">
-        <img src="/images/logo.svg" className="logo" alt="" />
-        <ul
-          className={`flex flex-col menu_items ${
-            isOpen ? "active" : ""
-          }`}
-        >
+      <header className="flex justify-between items-center w-full lg:px-0 px-8">
+        <a href="/">
+          <img src="/images/logo.svg" className="logo" alt="" />
+        </a>
+        <ul className={`flex flex-col menu_items ${isOpen ? "active" : ""}`}>
           <div className="flex items-center justify-center gap-10">
             <button
               type="button"
@@ -34,22 +32,22 @@ const Navbar = () => {
               <span class="sr-only">Close menu</span>
             </button>
             <li>
-              <a href="" className="uppercase text-sm">
+              <a href="#about" className="uppercase text-sm">
                 About us
               </a>
             </li>
             <li>
-              <a href="" className="uppercase text-sm">
+              <a href="#how-to-buy" className="uppercase text-sm">
                 How to buy
               </a>
             </li>
             <li>
-              <a href="" className="uppercase text-sm">
+              <a href="#roadmap" className="uppercase text-sm">
                 Roadmap
               </a>
             </li>
             <li>
-              <a href="" className="uppercase text-sm">
+              <a href="#faqs" className="uppercase text-sm">
                 Faqs
               </a>
             </li>

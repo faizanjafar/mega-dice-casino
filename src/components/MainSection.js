@@ -15,7 +15,7 @@ const MainSection = () => {
                 <h2 class="font-bold text-white uppercase leading-tight text-3xl -tracking-widest">
                   The #1 Gamefi on sol
                 </h2>
-                <h2 class="font-bold text-white uppercase tracking-tighter text-8xl strick">
+                <h2 class="font-bold text-white uppercase tracking-tighter lg:text-8xl text-4xl strick">
                   $Dice
                 </h2>
                 <p class="text-base lg:pr-16">
