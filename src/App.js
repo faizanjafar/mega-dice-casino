@@ -1,10 +1,14 @@
+import React from "react";
+import Navbar from "../src/components/Navbar.js";
+import MainSection from "./components/MainSection.js";
+
 function App() {
   return (
-    <div className="bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold text-gray-800">Hello, Tailwind CSS!</h1>
-      <p className="text-gray-600 mt-2">
-        This is a React app styled with Tailwind CSS.
-      </p>
+    <div class="relative min-h-screen text-white bg-[#091620] lg:py-10">
+      <div class="lg:px-16 2xl:px-[20%] min-[1800px]:px-[10%] min-[2200px]:px-[25%]">
+        <Navbar />
+        <MainSection />
+      </div>
     </div>
   );
 }
